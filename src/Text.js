@@ -38,10 +38,10 @@ export default function Text() {
 <button type="button" className="btn btn-primary mx-1" onClick={handleLoClink}>Lowercase</button>
 <button type="button" className="btn btn-primary mx-1" onClick={handleCoClink}>Copy Text</button>
 <button type="button" className="btn btn-primary my-1 mx-1" onClick={handleExClink}>Remove Extra Space</button>
-<button type="button" className="btn btn-primary my-1 mx-1" onClick={handleClearClink}>Claer Text</button>
+<button type="button" className="btn btn-primary my-1 mx-1" onClick={handleClearClink}>Clear Text</button>
 <div className="container my-3">
 <h5>Your Text Summary</h5>
-<p>{text.split(" ").length} words and {text.length} Character</p>
+<p>{text.length>0 ? text.split(" ").length:0} words and {text.length} Character</p>
 <p>{0.008*text.split(" ").length} Minutes read</p>
 </div>
 <div className="container my-3">
